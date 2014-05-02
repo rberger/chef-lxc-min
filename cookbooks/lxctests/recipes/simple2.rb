@@ -13,4 +13,7 @@ with_provisioner_options 'template' => 'ubuntu',
 file '/tmp/empty.conf' do
   content ''
 end
-machine 'simple'
+machine 'simple' do
+  recipe 'apt'
+end
+

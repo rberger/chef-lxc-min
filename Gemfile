@@ -16,6 +16,6 @@ end
 
 gem 'chef'
 gem 'chef-metal'
-#gem 'chef-metal-lxc'
+gem 'chef-metal-lxc'
 gem 'test-kitchen'
 #gem 'kitchen-vagrant'
