@@ -11,7 +11,8 @@
 
 ## Specific to Chef:
 .chef/*.pem
-.vagrant
+.vagrant/
+syntax_check_cache/
 
 ## Specific to RubyMotion:
 .dat*
