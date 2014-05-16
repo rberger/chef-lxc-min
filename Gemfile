@@ -16,6 +16,7 @@ end
 
 gem 'chef'
 gem 'chef-metal'
-gem 'chef-metal-lxc'
+# Can't install chef-metal-lxc on mac os x
+# gem 'chef-metal-lxc'
 gem 'test-kitchen'
 #gem 'kitchen-vagrant'

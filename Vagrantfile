@@ -123,13 +123,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # chef-validator, unless you changed the configuration.
   #
   #   chef.validation_client_name = "ORGNAME-validator"
-  #  config.vm.provision :shell do |shell|
-  #   shell.inline = "
-  #                    apt-get update
-  #                    apt-get upgrade
-  #                    apt-get install build-essential liblxc1 lxc lxc-dev lxc-templates python3-lxc curl git-core -y
-  #                    apt-get install emacs24-nox libavahi-compat-libdnssd1
-  #                    # curl -sSL https://get.rvm.io | bash -s stable --ruby=2.1.1
-  #                   "
-  # end
+   config.vm.provision :shell do |shell|
+    shell.inline = "
+                     apt-get update
+                     apt-get upgrade
+                     apt-get install build-essential liblxc1 lxc lxc-dev lxc-templates python3-lxc curl git-core -y
+                     apt-get install emacs24-nox libavahi-compat-libdnssd1
+                     curl -sSL https://get.rvm.io | bash -s stable --ruby
+                    "
+  end
 end
